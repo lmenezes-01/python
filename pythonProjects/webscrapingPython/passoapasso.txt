@@ -1,0 +1,33 @@
+1 - Abrir a pasta do projeto 
+2 - Criar um ambiente virtual 
+3 - Instalar os modulos 
+4 - Abrir um projeto no Pycharm 
+5 - Buscar as informações no IMDB 
+6 - Criar meu codigo 
+
+Boas práticas: 
+1 - Criar um ambiente virtual para os projetos que serão produzios com o framework
+	-  Criar o ambiente usando o Anaconda Prompt 
+2 - Comando para criar o ambiente: conda create -n filmes imdb250 python=3.6
+	- -n(Possibilita colocar o nome do projeto)
+3 - Comando para ativar o ambiente virtual: conda activate x(nome do proketo)
+4 - Comando para fechar o ambiente virtual: conda deactivate 
+5 - Ao terminar de rodar, iniciar o ambiente
+6 - Ao iniciar, baixar os pacotes:
+	- pip install scrapy 
+7 - Ir para o Pycharm 
+	- Criar um novo projeto 
+	- Pasta específica 
+	- ambiente já criado, não precisamos usar a VENV
+8 - Rodar o comando: scrapy startproject x(nome do projeto) 
+9 - cd x(nome do projeto)
+10 - scrapy genspider x(nome do projeto) x.com(colocar o .com no nome do projeto)
+11 - Abiente para teste: scrapy shell 
+	- fetch('url de destino')
+	- Se retornar (200) - Conectou
+12 - Usar a extensão do google - SelectorGadget
+	Ir clicando nos dados que quero trazer
+13 - Trazendo os dados.
+	- response.css('.x(nome do css)').get() ou getall() 
+	- Sair do ambiente: quit()
+14 - Rodar e baixar o arquivo: scrapy crawl imdb -O imdb.csv (Pode ser json e afins)
